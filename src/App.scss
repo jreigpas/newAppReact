@@ -1,5 +1,10 @@
+@import '~sass-rem/rem';
+
 .App {
   text-align: center;
+  &__text{
+    font-size: rem(40px);
+  }
 }
 
 .App-logo {
