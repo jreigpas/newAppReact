@@ -1,4 +1,3 @@
-import '../../App';
 import React from 'react';
 
 const Soporte: React.FC = () => {
