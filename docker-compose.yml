@@ -1,0 +1,11 @@
+version: "3"
+services:
+  test-react-app:
+    image: o2-telefonica:latest   
+    container_name: o2-telefonica
+    build: 
+      context: .
+    ports: 
+      - "3000:3000"
+    volumes:
+      - "./logs/nginx:/var/log/nginx"

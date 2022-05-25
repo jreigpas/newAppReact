@@ -1,6 +1,7 @@
 import { Box, Tabs } from '@telefonica/mistica';
 import React from 'react';
 import './index.scss';
+import CircularProgressBar from '../circularProgressBar/index';
 
 export interface TabsHomeData {
     selectedIndex: number;
@@ -43,6 +44,9 @@ export const TabsHome: React.FC<TabsHomeData> = ({ selectedIndex, setSelectedInd
                                 },
                             ]}
                         />
+                        <div className='tabs-home__wrapper-circular'>
+                            <CircularProgressBar percentage={60} />
+                        </div>
                     </Box>
                 </div>
             </div>

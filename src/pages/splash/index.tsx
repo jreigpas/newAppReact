@@ -1,30 +1,33 @@
-import '../../App';
-import React, { useCallback, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import MobileDetect from 'mobile-detect';
+import React, { useEffect, useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
 import ReactPlayer from 'react-player';
+import './index.scss';
 
 const Splash: React.FC = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const goToHome = useCallback(() => {
-        navigate('/home');
-    }, []);
+    // const goToHome = useCallback(() => {
+    //     navigate('/home');
+    // }, []);
+
+    //add OnEnded at <ReactPlayer> </ReactPlayer>'goToHome'
+
+    const [playing, setPlaying] = useState<boolean>(false);
 
     useEffect(() => {
-        // Wait for 3 seconds
-        setTimeout(() => {
-            goToHome();
-        }, 10000);
+        setPlaying(true);
     }, []);
+
     return (
         <div className='splash'>
             <ReactPlayer
                 className='react-player fixed-bottom'
-                url='assets/O2_Patrocinio_music.mp4'
-                width='375px'
-                height='667px'
-                loop={true}
-                playing={true}
+                url='assets/splash.mp4'
+                width='100%'
+                height='100%'
+                playing={playing}
+                volume={0}
             />
         </div>
     );
