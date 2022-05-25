@@ -1,0 +1,5 @@
+2022/05/25 15:00:45 [error] 32#32: *1 open() "/usr/share/nginx/html/home" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /home HTTP/1.1", host: "localhost:3000"
+2022/05/25 15:00:58 [error] 32#32: *1 open() "/usr/share/nginx/html/home/consumo" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /home/consumo HTTP/1.1", host: "localhost:3000"
+2022/05/25 15:01:01 [error] 32#32: *1 open() "/usr/share/nginx/html/home" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /home HTTP/1.1", host: "localhost:3000"
+2022/05/25 15:01:26 [error] 32#32: *1 open() "/usr/share/nginx/html/home.html" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /home.html HTTP/1.1", host: "localhost:3000"
+2022/05/25 15:01:30 [error] 32#32: *1 open() "/usr/share/nginx/html/home" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /home HTTP/1.1", host: "localhost:3000"

@@ -7,22 +7,39 @@ const Home: React.FC = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const { colors } = useTheme();
 
-    // const goToConsumo = useCallback(() => {
-    //     navigate('/consumo');
-    // }, []);
-    //const json = { Name: 'rocio', age: '28' };
+    const [msgNative, setMsgNative] = useState('xxx');
+    const [msgReact, setMsgReact] = useState('sin mensaje');
 
-    // const shareInSociaMedia = (json: any) => {
-    //     MobileAppInterface.shareContent(json);
-    // };
+    //Envia texto a la parte nativa
+    const sendToNative = () => {
+        window.Android.getFromAndroid(msgReact);
+    };
 
-    // poner OnPress en ButtonPrimary onPress={shareInSociaMedia(json)
+    const handleInputChange = (event: any) => {
+        setMsgReact(event.target.value);
+    };
+
+    //Recoger texto de la parte nativa
+    window.changeText = function (msg: string) {
+        setMsgNative(msg);
+    };
 
     return (
         <div className='home-page'>
             <Suspense fallback={<Spinner size={'24px'} color={colors.warning} />}>
                 <TabsHome selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} colors={colors}></TabsHome>
                 <div className='home-page__buttonPrimary'>
+                    <div className='home-page__buttonPrimary__msg'>
+                        Mensaje que recibimos de la parte nativa: {msgNative}
+                    </div>
+                    <form onSubmit={sendToNative}>
+                        <label>
+                            <input type='text' name='mensajeEnviar' onChange={handleInputChange} />
+                        </label>
+                        <button type='submit' className='w3-button w3-blue'>
+                            Enviar a Nativo
+                        </button>
+                    </form>
                     <ButtonPrimary to={'/home/consumo'}> Ir a consumo </ButtonPrimary>
                 </div>
             </Suspense>

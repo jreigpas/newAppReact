@@ -5,5 +5,12 @@
         height: 100%;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        &__msg{
+            margin-bottom: 10px;
+        }
+        form{
+            margin-bottom: 20px;
+        }
     }
 }
