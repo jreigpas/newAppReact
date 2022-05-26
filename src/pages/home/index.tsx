@@ -1,6 +1,7 @@
 import React, { Suspense, useState } from 'react';
 import './index.scss';
 import { ButtonPrimary, Spinner, useTheme } from '@telefonica/mistica';
+//import jsonNavigation from '../../mocks/navigation.json';
 const TabsHome = React.lazy(() => import('../../components/tabsHome'));
 
 const Home: React.FC = () => {
@@ -11,10 +12,10 @@ const Home: React.FC = () => {
     const [msgReact, setMsgReact] = useState('sin mensaje');
 
     //Envia texto a la parte nativa
+    //Native, getFromNative
     const sendToNative = () => {
         window.Android.getFromAndroid(msgReact);
     };
-
     const handleInputChange = (event: any) => {
         setMsgReact(event.target.value);
     };

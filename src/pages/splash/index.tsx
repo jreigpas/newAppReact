@@ -1,15 +1,14 @@
-// import MobileDetect from 'mobile-detect';
-import React, { useEffect, useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import './index.scss';
 
 const Splash: React.FC = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const goToHome = useCallback(() => {
-    //     navigate('/home');
-    // }, []);
+    const goToHome = useCallback(() => {
+        navigate('/home');
+    }, []);
 
     //add OnEnded at <ReactPlayer> </ReactPlayer>'goToHome'
 
@@ -28,6 +27,7 @@ const Splash: React.FC = () => {
                 height='100%'
                 playing={playing}
                 volume={0}
+                onEnded={goToHome}
             />
         </div>
     );
