@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/newAppReact/static/css/main.966b0a7c.css",
-    "main.js": "/newAppReact/static/js/main.742c2282.js",
+    "main.js": "/newAppReact/static/js/main.cc6e517f.js",
     "static/css/177.79b45a4a.chunk.css": "/newAppReact/static/css/177.79b45a4a.chunk.css",
     "static/js/177.0f4db3aa.chunk.js": "/newAppReact/static/js/177.0f4db3aa.chunk.js",
     "@juggle/resize-observer.js": "/newAppReact/static/js/@juggle/resize-observer.0a5335bf.chunk.js",
     "static/js/787.df8054c9.chunk.js": "/newAppReact/static/js/787.df8054c9.chunk.js",
     "index.html": "/newAppReact/index.html",
     "main.966b0a7c.css.map": "/newAppReact/static/css/main.966b0a7c.css.map",
-    "main.742c2282.js.map": "/newAppReact/static/js/main.742c2282.js.map",
+    "main.cc6e517f.js.map": "/newAppReact/static/js/main.cc6e517f.js.map",
     "177.79b45a4a.chunk.css.map": "/newAppReact/static/css/177.79b45a4a.chunk.css.map",
     "177.0f4db3aa.chunk.js.map": "/newAppReact/static/js/177.0f4db3aa.chunk.js.map",
     "resize-observer.0a5335bf.chunk.js.map": "/newAppReact/static/js/@juggle/resize-observer.0a5335bf.chunk.js.map",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.966b0a7c.css",
-    "static/js/main.742c2282.js"
+    "static/js/main.cc6e517f.js"
   ]
 }
