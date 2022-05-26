@@ -1,7 +1,6 @@
 {
   "name": "o2-telefonica-react",
   "version": "0.1.0",
-  "homepage": "https://jreigpas.github.io/newAppReact",
   "private": true,
   "dependencies": {
     "@quentin-sommer/react-useragent": "^3.1.1",
