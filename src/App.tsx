@@ -13,7 +13,7 @@ const App: React.FC = () => (
     <BrowserRouter>
         <Routes>
             <Route path='/' element={<Splash />} />
-            <Route path='/home' element={<Home />} /> 
+            <Route path='/home' element={<Home />} />
             <Route path='/home/consumo' element={<Consumo />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/soporte' element={<Soporte />} />
